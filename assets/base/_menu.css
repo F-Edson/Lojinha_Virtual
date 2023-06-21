@@ -1,0 +1,26 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+
+    box-shadow: 0 0 8px rgb(10, 149, 241);
+    font-size: 30px;
+}
+
+@media screen and (max-width: 700px){
+    nav{
+        display: flex;
+   
+    }
+
+    .icones{
+        flex-direction: column;
+    }
+}
+

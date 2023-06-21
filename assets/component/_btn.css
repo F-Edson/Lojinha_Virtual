@@ -1,0 +1,53 @@
+.button-form {
+  background-color: white;
+  border: 1px solid #bebebe;
+  height: 50px;
+  border-radius: 50px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+}
+
+.btn {
+  border: 0;
+  outline: 0;
+  font-size: 16px;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+
+}
+
+a {
+  color: var(--color-primy);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-black);
+  transition: 1s;
+}
+
+ul {
+  display: flex;
+  gap: 8rem;
+  padding: 10px;
+  margin-top: 10px;
+  align-items: center;
+  padding-left: 25%;
+  padding-right: 30%;
+  box-shadow: 0 0 2px white;
+  list-style-type: none;
+  
+
+}
+
+.icones a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
