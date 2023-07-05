@@ -1,0 +1,161 @@
+@media screen and (max-width: 768px) {
+
+
+  .icones {
+    display: none;
+  }
+
+  nav {
+    position: relative;
+    display: flex;
+
+  }
+
+  #bx-none1 {
+    display: none;
+  }
+
+  .search {
+    position: absolute;
+    top: 100px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+  }
+
+  .search-btn {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    right: 50px;
+  }
+
+  #bx-se {
+    position: relative;
+    left: 65px;
+    width: 10px;
+    font-size: 35px;
+
+  }
+
+  .logo {
+    position: relative;
+    left: 100px;
+
+  }
+
+
+
+  .menu-links {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem;
+
+  }
+
+  .menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 0;
+    background-color: #f1f1f1;
+    overflow: hidden;
+    transition: width 0.1s ease;
+    display: block;
+  }
+
+  .menu-btn {
+
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+
+  }
+
+  .menu-links {
+    padding: 0;
+    list-style: none;
+    margin-top: 50px;
+    display: none;
+    background: var(--color-primy);
+    border-radius: 5%;
+    margin-left: 5px;
+
+  }
+
+  .menu-links li {
+    padding: 10px;
+
+
+  }
+
+  .menu-links li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 20px;
+
+
+  }
+
+  .menu-links.open {
+    display: block;
+    width: 250px;
+    margin-top: 65px;
+
+
+  }
+
+  #bx {
+    font-size: 30px;
+    padding: 5px;
+  }
+
+}
+
+
+@media screen and (max-width: 768px) {
+  .vitrine-title {
+    margin-top: 100px;
+  }
+
+
+  .vitrine-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  #btn-purchase {
+    position: relative;
+    top: -15px;
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
