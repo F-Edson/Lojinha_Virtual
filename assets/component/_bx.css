@@ -1,10 +1,11 @@
 .bx {
   font-size: 50px;
- margin-right: 15px;
- cursor: pointer;
+  margin-right: 15px;
+  cursor: pointer;
 
 }
-.bx-shopping{
-display: flex;
-position: relative;
+
+.bx-shopping {
+  display: flex;
+  position: relative;
 }
