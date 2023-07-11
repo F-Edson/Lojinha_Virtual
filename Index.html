@@ -5,32 +5,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
+    <link rel="stylesheet" href="/assets/component/_main.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/assets/fontawesome-free-6.4.0-web/fontawesome-free-6.4.0-web/css/all.css">
     <title>Pagina Principal</title>
 </head>
 
 <body>
-    <nav>
-        <div>
-            <img class="logo" src="/assets/img/in price.jpeg" alt="Logo">
-        </div>
+    <nav class="nav-search">
+        <nav> <!--barra lateral mobile-->
+            <div onclick="toggleMenu()" class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <button onclick="toggleMenu()"><i class="fa-solid fa-xmark" style="color: #ffffff;"></i></button>
+                <li><a href="#">BRINQUEDOS</a></li>
+                <li><a href="#">ROUPAS</a></li>
+                <li><a href="#">ELETRÔNICOS</a></li>
+            </ul>
+        </nav> <!-- fim  da barra lateral mobile-->
+
+        <img src="/assets/img/in price.jpeg" alt="Logo">
 
         <form class="search">
             <input class="search-btn" type="text" name="pesquisa" placeholder="Digite sua busca...">
-            <button><i id="bx-se" class="bx bx-search"></i></button>
+            <button><i class="bx bx-search"></i></button>
         </form>
 
         <div class="bx-shopping">
-            <a href="#"><i id="bx-none1" class='bx bx-user'></i></a>
-            <a href="#"><i id="bx-none2" class='bx bxs-shopping-bags'></i></a>
+            <a href="#"><i id="bx-user1" class='bx bx-user'></i></a>
+            <a href="#"><i id="bx-user2" class='bx bxs-shopping-bags'></i></a>
         </div>
-
     </nav>
+
     <ul class="icones">
         <li>
             <a href="#">
-                <h3>BRINQUEDOS</h3>
+                <h3>BRINQUEDOS </h3>
                 <i class='bx bx-football'></i>
             </a>
         </li>
@@ -42,158 +56,319 @@
         </li>
         <li>
             <a href="#">
-                <h3>ACESSÓRIOS</h3>
+                <h3>ELETRÔNICOS</h3>
                 <i class='bx bxs-watch'></i>
             </a>
         </li>
     </ul>
-    </div>
-    <div class="menu-container">
-        <button class="menu-btn" onclick="toggleMenu()"><i class="bx bx-menu"></i></button>
-    </div>
-
-    <ul class="menu-links">
-        <li><a href="#">BRINQUEDOS</a><i id="bx" class='bx bx-football'></i></li>
-        <li><a href="#">ROUPAS</a><i id="bx" class='bx bx-closet'></i></li>
-        <li><a href="#">ACESSÓRIOS</a><i id="bx" class='bx bxs-watch'></i></li>
-    </ul>
-    </div>
-
-    <!--vitrine Masculina-->
-    <div class="vitrine-title">
-        <h2>Moda Masculina</h2>
-    </div>
-
-    <div class="vitrine-container">
-        <div class="vitrine-masculino">
-            <img src="/assets/img/Vitrine-Maculina/camisa.jpg" alt="camisa">
-            <a href="#">
-                <h3>Camiseta Masculina <br> Manga Curta <br> Estampa Bear Lines </h3>
-            </a>
-            <h3 class="vitrine-preço">R$ 120,00</h3>
-            <a id="btn-purchase" href="#">Comprar</a>
-        </div>
-
-        <div class="vitrine-masculino">
-            <img src="/assets/img/Vitrine-Maculina/bermuda.jpg" alt="bermuda">
-            <a href="#">
-                <h3>Bermuda Masculina <br> Moletom Bolso <br> Cargo Verde</h3>
-            </a>
-            <h3 class="vitrine-preço">R$ 88,00</h3>
-            <a id="btn-purchase" href="#">Comprar</a>
-        </div>
 
 
-        <div class="vitrine-masculino">
-            <img src="/assets/img/Vitrine-Maculina/calça.jpg" alt="bermuda">
-            <a href="#">
-                <h3>Calça Marinho <br> com recorte <br> nas laterais</h3>
-            </a>
-            <h3 class="vitrine-preço">R$ 32,00</h3>
-            <a id="btn-purchase" href="#">Comprar</a>
-        </div>
-
-
-
-        <div class="vitrine-masculino">
-            <img src="/assets/img/Vitrine-Maculina/jaqueta.jpg" alt="bermuda">
-            <a href="#">
-                <h3>Suéter Masculino NY <br> Manga longa malha <br> gola redonda</h3>
-            </a>
-            <h3 class="vitrine-preço">R$ 100,00</h3>
-            <a id="btn-purchase" href="#">Comprar</a>
-        </div>
-
-
-        <div class="vitrine-masculino">
-            <img src="/assets/img/Vitrine-Maculina/camisa2.jpg" alt="bermuda">
-            <a href="#">
-                <h3>Blazer Masculino <br> preto fechamento <br>em botoes </h3>
-            </a>
-            <h3 class="vitrine-preço">R$ 50,00</h3>
-            <a id="btn-purchase" href="#">Comprar</a>
-        </div>
-
-
-        <div class="vitrine-masculino">
-            <img src="assets/img/Vitrine-Maculina/camisa e bermuda.jpg" alt="bermuda">
-            <a href="#">
-                <h3>Conjunto Camiseta <br>e Bermuda <br>Rei de Espadas K </h3>
-            </a>
-            <h3 class="vitrine-preço">R$ 25,00</h3>
-            <a id="btn-purchase" href="#">Comprar</a>
-        </div>
-    </div>
-    <!--FIM VITRINE MASCULINA-->
- 
-
-            <!--vitrine Feminina-->
-    <div  class="vitrine-container-feminina">
-    
+    <!--Vitrine Moda Masculina-->
+    <nav class="vitrine-container">
         <div class="vitrine-title">
-            <h2>Moda Feminina</h2>
+            <h1>Moda Masculina</h1>
         </div>
-    
-        <div class="vitrine-container">
-            <div class="vitrine-feminina">
-                <img src="/assets/img/Moda-Feminina/Blusa Xadrez Manga Longa.jpg" alt="Blusa">
+
+        <div class="vitrine-photos">
+            <div class="item">
+                <img src="/assets/img/Moda-Masculina/bermuda.jpg" alt="bermuda">
                 <a href="#">
-                    <h3>Blusa Xadrez <br> Manga Longas </h3>
+                    <h2>Bermuda Masculina<br>Moletom Bolso <br>Cargo Verde </h2>
                 </a>
-                <h3 class="vitrine-preço">R$ 150,00</h3>
-                <a id="btn-purchase" href="#">Comprar</a>
-            </div>
-    
-            <div class="vitrine-feminina">
-                <img src="/assets/img/Moda-Feminina/Blusas Colarinho com manga bufante.jpg" alt="Blusa com manga bufante">
+                <h3 class="price">R$ 88.00</h3>
                 <a href="#">
-                    <h3>Blusas Colarinho com <br> manga bufante</h3>
+                    <h3 id="btn-purchase">Comprar</h3>
                 </a>
-                <h3 class="vitrine-preço">R$ 96,00</h3>
-                <a id="btn-purchase" href="#">Comprar</a>
             </div>
-    
-            <div class="vitrine-feminina">
+
+            <div class="item">
+                <img src="/assets/img/Moda-Masculina/calça.jpg" alt="calça">
+                <a href="#">
+                    <h2>Calça Marinho <br>com recorte nas <br>laterias </h2>
+                </a>
+                <h3 class="price">R$ 96.00</h3>
+                <a href="#">
+                    <h3 id="btn-purchase">Comprar</h3>
+                </a>
+            </div>
+
+            <div class="item">
+                <img src="/assets/img/Moda-Masculina/camisa e bermuda.jpg" alt="bermuda e camisa">
+                <a href="#">
+                    <h2>Conjunto Camiseta<br>e Bermuda Espadas<br><br></h2>
+                </a>
+                <h3 class="price">R$ 110.00</h3>
+                <a href="#">
+                    <h3 id="btn-purchase">Comprar</h3>
+                </a>
+            </div>
+
+            <div class="item">
+                <img src="/assets/img/Moda-Masculina/camisa.jpg" alt="Camisa">
+                <a href="#">
+                    <h2>Camiseta Masculina<br>Manga Curta <br>Estampa Bear Lines <br></h2>
+                </a>
+                <h3 class="price">R$ 52.00</h3>
+                <a href="#">
+                    <h3 id="btn-purchase">Comprar</h3>
+                </a>
+            </div>
+
+            <div class="item">
+                <img src="/assets/img/Moda-Masculina/camisa2.jpg" alt="Camisa">
+                <a href="#">
+                    <h2>Bermuda Blazer<br>Masculino preto<br>fechamento em botoes</h2>
+                </a>
+                <h3 class="price">R$ 60.00</h3>
+                <a href="#">
+                    <h3 id="btn-purchase">Comprar</h3>
+                </a>
+            </div>
+
+            <div class="item">
+                <img src="/assets/img/Moda-Masculina/jaqueta.jpg" alt="Jaqueta">
+                <a href="#">
+                    <h2> Moletom com Zíper <br> Blusa de Frio</h2>
+                </a>
+                <h3 class="price">R$ 98.00</h3>
+                <a href="#">
+                    <h3 id="btn-purchase">Comprar</h3>
+                </a>
+            </div>
+
+        </div>
+    </nav>
+    <!--fim da vitrine Masculina-->
+
+    <!--Vitrine Moda Feminina-->
+    <nav class="vitrine-container">
+        <div class="vitrine-title">
+            <h1>Moda Feminina</h1>
+        </div>
+
+        <div id="fm" class="vitrine-photos">
+            <div class="item">
+                <img src="/assets/img/Moda-Feminina/Belle Macacão de perna larga Um ombro.jpg" alt="Macacão">
+                <a href="#">
+                    <h2>Belle Macacão<br>de perna larga Um ombro</h2>
+                </a>
+                <h3 class="price">R$ 96.00</h3>
+                <a href="#">
+                    <h3 id="btn-purchase">Comprar</h3>
+                </a>
+            </div>
+
+            <div class="item">
+                <img src="/assets/img/Moda-Feminina/Blusa Xadrez Manga Longa.jpg" alt="Blusa Xadrez">
+                <a href="#">
+                    <h2>Blusa Xadrez <br> Com Manga Longa </h2>
+                </a>
+                <h3 class="price">R$ 45.00</h3>
+                <a href="#">
+                    <h3 id="btn-purchase">Comprar</h3>
+                </a>
+            </div>
+
+            <div class="item">
+                <img src="/assets/img/Moda-Feminina/Blusas Colarinho com manga bufante.jpg" alt="Blusa">
+                <a href="#">
+                    <h2>Blusas Colarinho <br> com manga bufante</h2>
+                </a>
+                <h3 class="price">R$ 78.00</h3>
+                <a href="#">
+                    <h3 id="btn-purchase">Comprar</h3>
+                </a>
+            </div>
+
+            <div class="item">
                 <img src="/assets/img/Moda-Feminina/Cachecol Color Block.jpg" alt="Cachecol">
                 <a href="#">
-                    <h3>Cachecol <br>Color Block</h3>
+                    <h2>Luxns Cachecol <br>militar Shemagh <br>Tactical Desert<br></h2>
                 </a>
-                <h3 class="vitrine-preço">R$ 122,00</h3>
-                <a id="btn-purchase" href="#">Comprar</a>
-            </div>
-    
-            <div class="vitrine-feminina">
-                <img src="/assets/img/Moda-Feminina/Calça Feminina Skinny Malha Crepe com Cinto Forrado Cintura Alta Qualidade.jpg" alt=" malha Crepe">
+                <h3 class="price">R$ 92.00</h3>
                 <a href="#">
-                    <h3>Calça Feminina <br> Skinny Malha Crepe </h3>
+                    <h3 id="btn-purchase">Comprar</h3>
                 </a>
-                <h3 class="vitrine-preço">R$ 225,00</h3>
-                <a id="btn-purchase" href="#">Comprar</a>
             </div>
-    
-    
-            <div class="vitrine-feminina">
+
+            <div class="item">
+                <img src="/assets/img/Moda-Feminina/Calça Feminina Skinny Malha Crepe com Cinto Forrado Cintura Alta Qualidade.jpg"
+                    alt="Calça">
+                <a href="#">
+                    <h2>Calça Feminina Skinny<br>Malha Crepe com <br> Cinto Forrados</h2>
+                </a>
+                <h3 class="price">R$ 112.00</h3>
+                <a href="#">
+                    <h3 id="btn-purchase">Comprar</h3>
+                </a>
+            </div>
+
+            <div class="item">
                 <img src="/assets/img/Moda-Feminina/Vestido Feminino Manga Longa Moda Gringa.jpg" alt="Vestido">
                 <a href="#">
-                    <h3>Vestido Feminino <br> Manga Longa</h3>
+                    <h2>Vestido Feminino <br>Manga Longa <br>Moda Gringa</h2>
                 </a>
-                <h3 class="vitrine-preço">R$ 165,00</h3>
-                <a id="btn-purchase" href="#">Comprar</a>
-            </div>
-    
-    
-            <div class="vitrine-feminina">
-                <img src="/assets/img/Moda-Feminina/Belle Macacão de perna larga Um ombro.jpg" alt=" Vestido">
+                <h3 class="price">R$ 102.00</h3>
                 <a href="#">
-                    <h3>Belle Macacão de <br> perna larga  </h3>
+                    <h3 id="btn-purchase">Comprar</h3>
                 </a>
-                <h3 class="vitrine-preço">R$ 95,65</h3>
-                <a id="btn-purchase" href="#">Comprar</a>
             </div>
-     
-    </div>
 
-   
+        </div>
+    </nav>
+    <!--fim da vitrine Moda  Feminina-->
+
+    <!--Vitrine  de Electronics-->
+    <nav class="vitrine-container">
+        <div class="vitrine-title">
+            <h1>Eletrônicos</h1>
+        </div>
+
+        <div class="vitrine-photos">
+            <div class="item">
+                <img src="/assets/img/Eletrônicos/bomba.jpg" alt="bomba de ar">
+                <a href="#">
+                    <h2>Compressor de ar portátil <br> recarregável </h2>
+                </a>
+                <h3 class="price">R$ 150.00</h3>
+                <a href="#">
+                    <h3 id="btn-purchase">Comprar</h3>
+                </a>
+            </div>
+
+            <div class="item">
+                <img src="/assets/img/Eletrônicos/camera.jpg" alt="Camera de Seguraça">
+                <a href="#">
+                    <h2> Camera de Seguraça Ip 360 </h2>
+                </a>
+                <h3 class="price">R$ 116.00</h3>
+                <a href="#">
+                    <h3 id="btn-purchase">Comprar</h3>
+                </a>
+            </div>
+
+            <div class="item">
+                <img src="/assets/img/Eletrônicos/fone de ouvido.jpg" alt="fone de ouvido">
+                <a href="#">
+                    <h2>Fone de Estúdio <br>Profissional Armer SH550</h2>
+                </a>
+                <h3 class="price">R$ 550.00</h3>
+                <a href="#">
+                    <h3 id="btn-purchase">Comprar</h3>
+                </a>
+            </div>
+
+            <div class="item">
+                <img src="/assets/img/Eletrônicos/microfone.jpg" alt="microfone">
+                <a href="#">
+                    <h2>Microfone Condensador <br> USB Blue Yeti Nano </h2>
+                </a>
+                <h3 class="price">R$ 778.00</h3>
+                <a href="#">
+                    <h3 id="btn-purchase">Comprar</h3>
+                </a>
+            </div>
+
+            <div class="item">
+                <img src="/assets/img/Eletrônicos/relogio.jpg" alt="Relogio">
+                <a href="#">
+                    <h2>Relógio Smartwatch <br> Inteligente D20 Android e IOS</h2>
+                </a>
+                <h3 class="price">R$ 112.00</h3>
+                <a href="#">
+                    <h3 id="btn-purchase">Comprar</h3>
+                </a>
+            </div>
+
+            <div class="item">
+                <img src="/assets/img/Eletrônicos/sdd.jpg" alt="SDD">
+                <a href="#">
+                    <h2>SSD A400, Kingston, <br> SA400S37/240G, Preto</h2>
+                </a>
+                <h3 class="price">R$ 95.70</h3>
+                <a href="#">
+                    <h3 id="btn-purchase">Comprar</h3>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!--fim da vitrine de Eletrônicos-->
+
+    <!--Vitrine de Brinquedos-->
+    <nav class="vitrine-container">
+        <div class="vitrine-title">
+            <h1>Brinquedos</h1>
+        </div>
+
+        <div class="vitrine-photos">
+            <div class="item">
+                <img src="/assets/img/Brinquedos/Brinquedo1.jpg" alt="Cobra Articulada">
+                <a href="#">
+                    <h2>Cobra Articulada Naja <br>Brinquedo Magica OFERTA </h2>
+                </a>
+                <h3 class="price">R$ 4.25</h3>
+                <a href="#">
+                    <h3 id="btn-purchase">Comprar</h3>
+                </a>
+            </div>
+
+            <div class="item">
+                <img src="/assets/img/Brinquedos/Brinquedo2.jpg" alt="Helicoptero Policia ">
+                <a href="#">
+                    <h2>Helicoptero Policia <br>Para Criança Altimar Brinquedos</h2>
+                </a>
+                <h3 class="price">R$ 25.00</h3>
+                <a href="#">
+                    <h3 id="btn-purchase">Comprar</h3>
+                </a>
+            </div>
+
+            <div class="item">
+                <img src="/assets/img/Brinquedos/Brinquedo3.jpg" alt="Máquina De Bolhas">
+                <a href="#">
+                    <h2>Máquina De Bolhas Mágica<br></h2>
+                </a>
+                <h3 class="price">R$ 42.00</h3>
+                <a href="#">
+                    <h3 id="btn-purchase">Comprar</h3>
+                </a>
+            </div>
+
+            <div class="item">
+                <img src="/assets/img/Brinquedos/Brinquedo4.jpg" alt="Brinquedo Boi Touro">
+                <a href="#">
+                    <h2>Brinquedo Boi <br> Touro Farm Animais <br>Da Fazenda</h2>
+                </a>
+                <h3 class="price">R$ 9.50</h3>
+                <a href="#">
+                    <h3 id="btn-purchase">Comprar</h3>
+                </a>
+            </div>
+
+            <div class="item">
+                <img src="/assets/img/Brinquedos/Brinquedo5.jpg" alt="Brinquedo Crocodilo">
+                <a href="#">
+                    <h2>Brinquedo Crocodilo <br> Dentista Morde Dedo Verde</h2>
+                </a>
+                <h3 class="price">R$ 27.66</h3>
+                <a href="#">
+                    <h3 id="btn-purchase">Comprar</h3>
+                </a>
+            </div>
+
+            <div class="item">
+                <img src="/assets/img/Brinquedos/Brinquedo6.jpg" alt="Brinquedo Lagarta ">
+                <a href="#">
+                    <h2>Brinquedo Lagarta <br>de Aperta Maluca Infantil</h2>
+                </a>
+                <h3 class="price">R$ 18.88</h3>
+                <a href="#">
+                    <h3 id="btn-purchase">Comprar</h3>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!--Fim da Vitrine de Brinquedos -->
 
 
 
@@ -214,10 +389,7 @@
 
 
 
-
-
-
-    <script src="/assets/java/_menu-links.js"></script>
+    <script src="/assets/Js/_sidebar.js"></script>
 </body>
 
 </html>

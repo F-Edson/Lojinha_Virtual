@@ -1,48 +1,79 @@
 .vitrine-container {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+
+
+}
+
+.vitrine-photos {
     position: relative;
     display: flex;
-    
+    margin: 80px 10px;
+    gap: 1rem;
+    text-align: center;
+    width: 100%;
+    height: 16%;
+
 
 }
 
-.vitrine-title h2 {
-    padding-left: 20px;
+.vitrine-title {
+    position: absolute;
+}
+
+.vitrine-title h1 {
     border-bottom: 1px solid #bebebe;
-    margin: 0 0 30px;
+    width: 93vw;
+    margin: 32px 10px;
 }
 
-.vitrine-container img {
-    width: 200px;
-    height: 200px;
-    margin-left: 20px;
+.item {
+    box-shadow: 0 0 1px;
+    padding: 4px;
+
 }
 
-.vitrine-container h3 {
-    position: relative;
-    bottom: 10px;
-    margin-left: 20px;
+.item img {
+    width: 100%;
+    height: 50%;
 }
+
+.item h2 {
+    display: block;
+    height: 60px;
+    overflow: hidden;
+    font-size: .875em;
+    line-height: 20px;
+    margin-top: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
 
 #btn-purchase {
-    background-color: rgb(255, 0, 0);
-    color: black;
-    border-radius: 20px;
-    font-size: 18px;
-    padding: 5px 12px;
-    text-transform: uppercase;
-    font-weight: 600;
-    position: absolute;
-    bottom: -50px;
-    margin-left: 20px;
-}
-
-.vitrine-preço h3 {
-    position: absolute;
-    padding-left: 35px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(22, 22, 22);
+    border-radius: 100px;
+    margin: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+    padding: 9px 12px;
+    margin-bottom: 70px;
 }
 
 
-.vitrine-container-feminina{
-position: relative;
-top:  100px;
+.item h3 {
+    font-size: 25px;
+    color: rgba(24, 218, 18, 0.89);
+    padding: 30px 10px;
+    text-align: center;
+
+
+}
+
+#fm {
+    width: 100%;
+    height: 16%;
+
 }

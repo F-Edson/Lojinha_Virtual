@@ -1,35 +1,35 @@
 * {
   box-sizing: border-box;
-}
-
-body {
-  font-family: cursive;
   margin: 0;
-}
-
-nav {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  justify-content: center;
-  box-shadow: 0 0 2px rgb(10, 149, 241);
 
 }
 
-.logo {
-  width: 200px;
+body,
+html {
+  font-family: Arial;
+  margin: 0 auto;
+  height: 100%;
+
+}
+.nav-search img {
+  width: 250px;
   height: 100%;
   padding: 10px;
-  margin-right: 100px;
+}
 
-
+.nav-search {
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 2px rgb(10, 149, 241);
+  justify-content: center;
+  gap: 1rem;
+  
 }
 
 .menu-container {
   display: none;
 }
 
-.menu-links{
+.menu-links {
   display: none;
 }
