@@ -21,13 +21,12 @@
 
 }
 
-button {
+.search button {
   border: none;
   background-color: transparent;
 
 }
-
-a {
+ a {
   color: var(--color-primy);
   text-decoration: none;
 }

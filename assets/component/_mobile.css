@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
   #bx-user1,
   .icones {
@@ -8,6 +8,7 @@
   .nav-search {
     padding: 2px;
     margin: 0;
+    width: auto;
   }
 
   .search {
@@ -86,6 +87,7 @@
   .vitrine-container {
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 90px;
+    width: auto;
   }
 
   .vitrine-photos {
@@ -104,5 +106,49 @@
     width: 84vw;
     font-size: 25px;
   }
+
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+  .footer-middle {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    
+
+  }
+
+  .footer-ajuda-suporte{
+ 
+    left: 17px;
+  }
+
+   .social{
+    padding-left: 17px;
+
+  }
+   
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }

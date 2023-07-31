@@ -1,0 +1,73 @@
+.footer-middle {
+    background-color: #100e17;
+    padding: 40px 0;
+    display: flex;
+    align-items: baseline;
+    position: relative;
+    justify-content: space-between; 
+}
+
+.footer-contato h3 {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    color: rgb(221, 235, 247);
+}
+
+.footer-ajuda-suporte h3 {
+    position: relative;
+    right: 16px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    color: rgb(221, 235, 247);
+}
+
+.footer-contato,
+.footer-ajuda-suporte {
+    font-size: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    bottom: 8px;
+    justify-content: center;
+    margin: 20px;
+}
+
+#icone-contato,
+#icone-email,
+#icone-numero,
+.footer-ajuda-suporte i {
+    font-size: 22px;
+    position: relative;
+    left: 13px;
+    align-items: center;
+}
+
+.footer-middle a {
+    color: rgba(22, 120, 211, 0.92);
+}
+
+.footer-middle a:hover {
+    border-bottom: 1px solid #bebebe;
+
+}
+.social{
+    margin: 10px;
+}
+
+
+.Copyright {
+    background: #171b22;
+    padding: 25px 0;
+    position: relative;
+}
+
+.Copyright p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(227, 234, 240);
+    font-size: 14px;
+}

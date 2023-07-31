@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
 
     <link rel="stylesheet" href="/assets/component/_main.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -15,13 +16,13 @@
 <body>
     <nav class="nav-search">
         <nav> <!--barra lateral mobile-->
-            <div onclick="toggleMenu()" class="mobile-menu">
+            <div onclick="alterarMenu()" class="mobile-menu">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
             </div>
             <ul class="nav-list">
-                <button onclick="toggleMenu()"><i class="fa-solid fa-xmark" style="color: #ffffff;"></i></button>
+               <butto onclick="alterarMenu()"><i class="fa-solid fa-xmark" style="color: #ffffff;"></i></butto>
                 <li><a href="#">BRINQUEDOS</a></li>
                 <li><a href="#">ROUPAS</a></li>
                 <li><a href="#">ELETRÔNICOS</a></li>
@@ -72,11 +73,11 @@
         <div class="vitrine-photos">
             <div class="item">
                 <img src="/assets/img/Moda-Masculina/bermuda.jpg" alt="bermuda">
-                <a href="#">
+                <a href="/assets/Pages/Roupas.html">
                     <h2>Bermuda Masculina<br>Moletom Bolso <br>Cargo Verde </h2>
                 </a>
                 <h3 class="price">R$ 88.00</h3>
-                <a href="#">
+                <a href="/assets/Pages/Roupas.html">
                     <h3 id="btn-purchase">Comprar</h3>
                 </a>
             </div>
@@ -369,6 +370,35 @@
         </div>
     </nav>
     <!--Fim da Vitrine de Brinquedos -->
+
+    <footer>
+        <div class="footer-middle">
+            <div class="footer-contato">
+                <h3><i id="icone-contato" class='bx bxs-contact' style='color:rgba(22, 120, 211, 0.92)'></i>Contatos</i>
+                </h3>
+                <a><i id="icone-numero" class='bx bxl-whatsapp' style='color:rgba(28,181,49,0.92)'></i>(86)
+                    994748566</a>
+                <a href="mailto:F_Edson@Gmail.com"><i id="icone-email" class="bx bxl-gmail"
+                        style="color: rgba(195, 22, 26, 0.91);"></i>F_Edson@Gmail.com</a>
+            </div>
+
+            <div class="footer-ajuda-suporte">
+                <h3><i class='bx bx-help-circle' style='color:rgba(22, 120, 211, 0.92)'></i>Ajuda e Suporte</h3>
+                <a href="#">Trocas e Devoluções </a>
+                <a href="#">Politica de Entrega</a>
+            </div>
+
+            <div class="social">
+                <a href="#"><i class='bx bxl-facebook-square'></i></a>
+                <a href="#"><i class='bx bxl-instagram-alt' style="color: rgba(195, 22, 26, 0.91);"></i></a>
+            </div>
+        </div>
+
+        <div class="Copyright">
+            <p>Copyright 2023. Todos os direitos reservados F_Edson</p>
+        </div>
+
+    </footer>
 
     <script src="/assets/Js/_sidebar.js"></script>
 </body>
