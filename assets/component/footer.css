@@ -1,11 +1,21 @@
+.footer {
+    position: relative;
+    width: 100%;
+    bottom: 0;
+
+
+}
+
 .footer-middle {
+    position: relative;
+    bottom: 0;
     background-color: #100e17;
     padding: 40px 0;
     display: flex;
     align-items: baseline;
-    position: relative;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
+
 
 .footer-contato h3 {
     display: flex;
@@ -53,7 +63,8 @@
     border-bottom: 1px solid #bebebe;
 
 }
-.social{
+
+.social {
     margin: 10px;
 }
 
@@ -62,6 +73,7 @@
     background: #171b22;
     padding: 25px 0;
     position: relative;
+    bottom: 0;
 }
 
 .Copyright p {

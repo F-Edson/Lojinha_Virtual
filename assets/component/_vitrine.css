@@ -30,12 +30,13 @@
 
 .item {
     box-shadow: 0 0 1px;
-    padding: 4px;
+    width: 160px;
+
 
 }
 
 .item img {
-    width: 100%;
+    max-width: 160px;
     height: 50%;
 }
 
@@ -55,12 +56,12 @@
     color: rgb(255, 255, 255);
     background-color: rgb(22, 22, 22);
     border-radius: 100px;
-    margin: 20px;
     margin-bottom: 20px;
     text-align: center;
     font-size: 30px;
     padding: 9px 12px;
     margin-bottom: 70px;
+    cursor: pointer;
 }
 
 

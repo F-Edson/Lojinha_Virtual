@@ -2,223 +2,268 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="/assets/fontawesome-free-6.4.0-web/fontawesome-free-6.4.0-web/css/all.css">
-    <link rel="stylesheet" href="/assets/Pages/mobile.css">
-    <link rel="stylesheet" href="/assets/Pages/Style.css">
-    <link rel="stylesheet" href="/assets/component/_main.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/component/_main.css">
+  <link rel="stylesheet" href="/assets/Pages/Style.css">
+  <link rel="stylesheet" href="/assets/Pages/_mobile.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <title></title>
 </head>
 
 <body>
-    <!-- barra de pesquisa-->
-    <nav class="nav-search">
-        <img src="/assets/img/in price.jpeg" alt="Logo">
+  <header class="nav-search">
+    <a href="/index.html"> <img src="/assets/img/in price.jpeg" alt="Logo"></a>
 
-        <form class="search">
-            <input class="search-btn" type="text" name="pesquisa" placeholder="Digite sua busca...">
-            <button><i class="bx bx-search"></i></button>
-        </form>
+    <form class="search">
+      <input class="search-btn" type="text" name="pesquisa" placeholder="Digite sua busca...">
+      <button><i class="bx bx-search"></i></button>
+    </form>
 
-        <div class="bx-shopping">
-            <a href="#"><i id="bx-user1" class='bx bx-user'></i></a>
-            <a href="#"><i id="bx-user2" class='bx bxs-shopping-bags'></i></a>
-        </div>
-    </nav>
-    <!-- Fim da barra de pesquisa-->
-
-    <main class="conteiner-main">
-        <!--Conteiner de Imagem-->
-        <div class="img-conteiner">
-            <div class="img-main">
-                <h1>BERMUDA MASCULINA MOLETOM COM BOLSO CARGO VERDE</h1>
-                <img id="image-main" src="/assets/img/Moda-Masculina/bermuda.jpg" alt="bermuda">
-            </div>
-
-            <span class="icone-star">
-                <i class='bx bxs-star' style='color:#bd903f'></i>
-                <i class='bx bxs-star' style='color:#bd903f'></i>
-                <i class='bx bxs-star' style='color:#bd903f'></i>
-                <i class='bx bxs-star' style='color:#bd903f'></i>
-                <i class='bx bxs-star-half' style='color:#bd903f'></i>
-                (33)
-            </span>
-
-            <div class="imagem-description">
-                <img src="/assets/img/Moda-Masculina/bermuda.jpg" alt="bermuda teste">
-                <img src="/assets/img/Moda-Masculina/bermuda teste.jpg" alt="bermuda teste">
-                <img src="/assets/img/Moda-Masculina/bermuda teste2.jpg" alt="bermuda teste">
-                <img src="/assets/img/Moda-Masculina/bermuda teste3.jpg" alt="bermuda teste">
-            </div>
-
-        </div>
-        <!--Fim do Conteiner de Imagem-->
-
-        <!--Conteiner Preço-->
-        <div class="conteiner-price">
-            <div class="price">
-                <img src="/assets/Pages/img/logo-pix-png-icone-520x520.png" alt="logo pix">
-                <span>R$ 88,00</span>
-            </div>
-
-            <div class="price-card-detail">
-                <span class="price-card"><i id="price-card" class='bx bxs-credit-card'
-                        style='color:rgba(0,0,0,0.87)'></i>R$
-                    90,00</span>
-                <span class="title-card">No cartão em até 3x<br> de R$ 30,00 sem juros</span>
-            </div>
-        </div>
-        <!--Fim do Conteiner Preço-->
-
-        <!--Btn para escolher tamanho da roupa M P G GG-->
-        <div class="btn-tamanho">
-            <div>
-                <p id="title-T">Tamanho:</p>
-            </div>
-
-            <input type="radio" id="tamanhoP" name="tamanho" value="P">
-            <label for="tamanhoP">P</label>
-
-            <input type="radio" id="tamanhoM" name="tamanho" value="M">
-            <label for="tamanhoM">M</label>
-
-            <input type="radio" id="tamanhoG" name="tamanho" value="G">
-            <label for="tamanhoG">G</label>
-
-            <input type="radio" id="tamanhoGG" name="tamanho" value="GG">
-            <label for="tamanhoGG">GG</label>
-        </div>
-        <!--fim  Btn para escolher tamanho da roupa M P G GG -->
-
-        <!--btn compra -->
-        <div class="conteiner-btn-purchase">
-            <input type="text" id="btn-quantidade" min="1" max="10" value="1">
-            <div class="btn-add">
-                <button id="btn-less">+</button>
-                <button id="btn-more">-</button>
-            </div>
-            <button class="btn-purchase">Comprar</button>
-            <img src="/assets/Pages/img/Icones das formas de pagamento.jpg" alt="forma de pagamento">
-        </div>
-        <!-- fim btn compra -->
-
-        <!--Area para calcular o cep-->
-        <div class="area-calculo-cep">
-            <div class="icone-area">
-                <i class='bx bxs-truck'></i>
-                <label>Calcule o frete</label>
-            </div>
-
-            <input class="cep" type="tel" name="cep" placeholder="00000-000">
-            <button class="btn-calcular-frete">OK</button>
-        </div>
-        <!-- Fim da area para calcular o cep-->
-    </main>
-
-    <!--descrição do produto-->
-    <div class="container-product-description">
-        <h3>Descrição do produto</h3>
-
-        <p>Bermudas são peças curingas e super versáteis no guarda-roupa.
-            Nossas bermudas de moletom sem pelúcia acompanham todas as situações informais e também a prática de
-            esportes.
-            Modernas e cheias de detalhes, essa calça possui braguilha e nervura que dão um diferencial e a barra
-            é
-            bainha italiana. As
-            bermudas moletom masculinas inprice combinam com todo tipo de tênis, do casual ao super esportivo,
-            composições com camisetas são a aposta para dias descontraídos.
-            A cor VERDE é uma cor neutra, calma, o cinzento sugere equilíbrio, profissionalismo e
-            responsabilidade.
-            Costuma ser usada como coadjuvante, para fazer combinações com cores mais brilhantes, a fim de
-            realçar
-            as cores quentes e frias.
-        </p>
+    <div class="bx-shopping">
+      <a href="#"><i id="bx-user1" class='bx bx-user'></i></a>
+      <a><i id="bx-user2" class='bx bxs-shopping-bag'></i></a>
+      <p class="contagem_de_produto">0</p>
     </div>
-    <!-- fim da descrição do produto-->
+  </header>
+  <main>
+    <div class="conteiner-imagem">
+      <div class="imagem-principal">
+        <h3 id="title-principal">Bermuda Masculina Moletom Bolso Cargo Verde</h3>
+        <img id="img-main" src="/assets/img/Moda-Masculina/bermuda.jpg" alt="bermuda">
+      </div>
 
-    <footer>
-        <div class="footer-middle">
-            <div class="footer-contato">
-                <h3><i id="icone-contato" class='bx bxs-contact' style='color:rgba(22, 120, 211, 0.92)'></i>Contatos</i>
-                </h3>
-                <a><i id="icone-numero" class='bx bxl-whatsapp' style='color:rgba(28,181,49,0.92)'></i>(86)
-                    994748566</a>
-                <a href="mailto:F_Edson@Gmail.com"><i id="icone-email" class="bx bxl-gmail"
-                        style="color: rgba(195, 22, 26, 0.91);"></i>F_Edson@Gmail.com</a>
-            </div>
+      <div class="imagem-pequena">
+        <img id="img-main-pequena" src="/assets/img/Moda-Masculina/bermuda.jpg" alt="bermuda"
+          onclick="changeMainImage(this)">
+        <img id="img-item" src="/assets/img/Moda-Masculina/bermuda teste1.jpg" alt="teste"
+          onclick="changeMainImage(this)">
+        <img id="img-item" src="/assets/img/Moda-Masculina/bermuda teste2.jpg" alt="teste"
+          onclick="changeMainImage(this)">
+        <img id="img-item" src="/assets/img/Moda-Masculina/bermuda teste3.jpeg" alt="teste"
+          onclick="changeMainImage(this)">
+      </div>
 
-            <div class="footer-ajuda-suporte">
-                <h3><i class='bx bx-help-circle' style='color:rgba(22, 120, 211, 0.92)'></i>Ajuda e Suporte</h3>
-                <a href="#">Trocas e Devoluções </a>
-                <a href="#">Politica de Entrega</a>
-            </div>
+      <button id="prev-btn" onclick="navigateImage(-1)"><i class='bx bxs-chevron-left'></i></button>
+      <button id="next-btn" onclick="navigateImage(1)"><i class='bx bxs-chevron-right'></i></button>
+    </div>
 
-            <div class="social">
-                <a href="#"><i class='bx bxl-facebook-square'></i></a>
-                <a href="#"><i class='bx bxl-instagram-alt' style="color: rgba(195, 22, 26, 0.91);"></i></a>
-            </div>
+    <div class="infomarcoes-de-compra">
+      <div class="price">
+        <img src="/assets/Pages/img/logo-pix-png-icone-520x520.png" alt="logo pix" width="50px">
+        <span id="price-item">R$ 88,00</span>
+      </div>
+
+
+      <div class="price-card-detail">
+        <span class="total-price"> <i id="total-price" class='bx bxs-credit-card'
+            style='color:rgba(0,0,0,0.87)'></i></span>
+        <span class="title-card">No cartão em até <span id="installments">3x</span><br> de R$ <span
+            id="installment-price">30.00</span> sem juros</span>
+      </div>
+
+    </div>
+
+
+    <div class="btn-tamanho">
+      <div>
+        <p id="title-T">Tamanho:</p>
+      </div>
+
+      <input type="radio" id="tamanhoP" name="tamanho" value="P">
+      <label for="tamanhoP">P</label>
+
+      <input type="radio" id="tamanhoM" name="tamanho" value="M">
+      <label for="tamanhoM">M</label>
+
+      <input type="radio" id="tamanhoG" name="tamanho" value="G">
+      <label for="tamanhoG">G</label>
+
+      <input type="radio" id="tamanhoGG" name="tamanho" value="GG">
+      <label for="tamanhoGG">GG</label>
+    </div>
+
+    <div class="conteiner-btn-purchase">
+      <input type="text" id="btn-quantidade" min="1" max="10" value="1">
+      <div class="btn-add">
+        <button id="btn-less">+</button>
+        <button id="btn-more">-</button>
+      </div>
+
+
+      <button id="btn-comp" class="btn-purchase">Comprar</button>
+      <img src="/assets/Pages/img/Icones das formas de pagamento.jpg" alt="forma de pagamento">
+
+
+
+
+      <div class="janela_modal">
+        <div id="info-modal">
+          <span onclick="RemoverMOdal()" id="icone_x"><i class='bx bxs-x-circle'></i></span>
+          <h1 id="title_modal">Produto adicionado ao seu carrinho!</h1>
+          <a href="/index.html"> <button id="btn1">Continuar Comprando</button></a>
+          <button id="btn2">Finalizar Compra</button>
+        </div>
+      </div>
+
+
+    </div>
+
+
+
+
+
+    <div class="area-calculo-cep">
+      <div class="icone-area">
+        <i class='bx bxs-truck'></i>
+        <label>Calcule o frete</label>
+      </div>
+
+      <input class="cep" type="tel" name="cep" placeholder="00000-000">
+      <button class="btn-calcular-frete">OK</button>
+    </div>
+
+    <div class="container-product-description">
+      <h3>Descrição do produto</h3>
+
+      <p>Bermudas são peças curingas e super versáteis no guarda-roupa.
+        Nossas bermudas de moletom sem pelúcia acompanham todas as situações informais e também a prática de
+        esportes.
+        Modernas e cheias de detalhes, essa calça possui braguilha e nervura que dão um diferencial e a barra
+        é
+        bainha italiana. As
+        bermudas moletom masculinas inprice combinam com todo tipo de tênis, do casual ao super esportivo,
+        composições com camisetas são a aposta para dias descontraídos.
+        A cor VERDE é uma cor neutra, calma, o cinzento sugere equilíbrio, profissionalismo e
+        responsabilidade.
+        Costuma ser usada como coadjuvante, para fazer combinações com cores mais brilhantes, a fim de
+        realçar
+        as cores quentes e frias.
+      </p>
+    </div>
+  </main>
+
+
+
+  <section>
+    <div class="carrinho-container">
+
+
+
+
+
+
+      <main class="conteiner-carrinho-de-compra">
+        <div class="title">
+          <h2><i class='bx bx-cart'></i>Carrinho de Compras</h2>
+        </div>
+        <div class="title-item">
+          <p id="item1">Itens</p>
+          <p>Quantidade</p>
+          <p>Valor PIX </p>
+          <p>Valor cartão</p>
+
         </div>
 
-        <div class="Copyright">
-            <p>Copyright 2023. Todos os direitos reservados F_Edson</p>
+        <div class="carrinho-items">
+          <!-- Itens do carrinho serão exibidos aqui -->
+
+
+          <!-- <div class="conteiner-produto-confirm">
+
+            <img id="imagemDacompra" src="/assets/img/Moda-Masculina/calça.jpg" alt="calça" width="100">
+
+            <a href="#">
+              <p id="titleCompraCar">Calça Marinho com recorte nas laterias</p>
+            </a>
+
+            <span class="removerProduto"><i class='bx bxs-x-circle'></i></span>
+             
+            <div class="btn-add-confirm">
+              <button id="btn-more-carrinho">-</button>
+              <input type="text" id="btn-quantidade-confirm" min="1" max="10" value="1">
+              <button id="btn-less-carrinho">+</button>
+            </div>
+
+            <div class="valores-carrinho">
+              <div class="valores-carrinho1">
+                <p id="price-pix">88,10</p>
+                <p id="price-pix2">avista</p>
+              </div>
+              <div class="valores-carrinho2">
+                <p id="price-card">100,20</p>
+                <p id="price-item2">no cartão</p>
+              </div>
+            </div>-->
         </div>
 
-    </footer>
-    <script src="/assets/Pages/script.js"></script>
+
+
+        <div class="carinho-vazio">
+          <i class='bx bxs-sad'></i>
+          <h1>Carrinho Vazio</h1>
+        </div>
+
+
+
+
+        <div class="btn-voltar">
+          <button class="escoder-carrinho"><i class='bx bx-left-arrow-alt'></i>Voltar as compras</button>
+          <a href=""><button id="btn-finalizar-compra">Ir para o pagamento<i
+                class='bx bx-right-arrow-alt'></i></button></a>
+        </div>
+      </main>
+
+
+
+
+
+    </div>
+
+  </section>
+
+
+
+
+  <footer class="footer">
+    <div class="footer-middle">
+      <div class="footer-contato">
+        <h3><i id="icone-contato" class='bx bxs-contact' style='color:rgba(22, 120, 211, 0.92)'></i>Contatos</i>
+        </h3>
+        <a><i id="icone-numero" class='bx bxl-whatsapp' style='color:rgba(28,181,49,0.92)'></i>(86)
+          994748566</a>
+        <a href="mailto:F_Edson@Gmail.com"><i id="icone-email" class="bx bxl-gmail"
+            style="color: rgba(195, 22, 26, 0.91);"></i>F_Edson@Gmail.com</a>
+      </div>
+
+      <div class="footer-ajuda-suporte">
+        <h3><i class='bx bx-help-circle' style='color:rgba(22, 120, 211, 0.92)'></i>Ajuda e Suporte</h3>
+        <a href="#">Trocas e Devoluções </a>
+        <a href="#">Politica de Entrega</a>
+      </div>
+
+      <div class="social">
+        <a href="/assets/img/Moda-Masculina/"><i class='bx bxl-facebook-square'></i></a>
+        <a href=""><i class='bx bxl-instagram-alt' style="color: rgba(195, 22, 26, 0.91);"></i></a>
+      </div>
+    </div>
+
+    <div class="Copyright">
+      <p>Copyright 2023. Todos os direitos reservados F_Edson</p>
+    </div>
+
+  </footer>
+
+
+  <script src="/assets/Js/script.js"></script>
+
+
+
+
+
+
+
 </body>
 
 </html>
-
-
-
-
-<body class="body-main">
-
-    <link rel="stylesheet" href="/assets/Pages/mobile.css">
-    <link rel="stylesheet" href="/assets/base/_menu.css">
-
-
-    <main class="conteiner-main-mobile">
-        <div class="img-econtein">
-            <div class="img-main">
-                <h1>BERMUDA MASCULINA MOLETOM COM BOLSO CARGO VERDE</h1>
-
-                <div class="slider-container">
-                    <div class="slider">
-                        <img src="/assets/img/Moda-Masculina/bermuda teste.jpg" alt="Image 1" class="slider-item">
-                        <img src="/assets/img/Moda-Masculina/bermuda teste2.jpg" alt="Image 2" class="slider-item">
-                        <img src="/assets/img/Moda-Masculina/bermuda.jpg" alt="Image 3" class="slider-item">
-                        <!-- Adicione mais imagens aqui -->
-                    </div>
-                    <button id="btn-left">Anterior</button>
-                    <button id="btn-right">Próxima</button>
-                </div>
-
-
-            </div>
-
-            <span class="icone-star-mobile">
-                <i class='bx bxs-star' style='color:#bd903f'></i>
-                <i class='bx bxs-star' style='color:#bd903f'></i>
-                <i class='bx bxs-star' style='color:#bd903f'></i>
-                <i class='bx bxs-star' style='color:#bd903f'></i>
-                <i class='bx bxs-star-half' style='color:#bd903f'></i>
-                (33)
-            </span>
-
-
-
-
-        </div>
-    </main>
-
-
-
-
-
-
-
-    <script src="/assets/Pages/slider.js"></script>
-</body>

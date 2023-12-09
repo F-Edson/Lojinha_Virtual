@@ -1,5 +1,6 @@
 :root{
-    --color-primy:rgba(22, 120, 211, 0.92);
-    --color-black: rgb(0, 0, 0);
+    --color-primy:#1678d3eb;
+    --color-black: #000;
+    --color-text:#2c2c2c;
    
 }

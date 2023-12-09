@@ -3,18 +3,17 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-
     <link rel="stylesheet" href="/assets/component/_main.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="/assets/fontawesome-free-6.4.0-web/fontawesome-free-6.4.0-web/css/all.css">
+
     <title>Pagina Principal</title>
 </head>
 
 <body>
-    <nav class="nav-search">
+    <header class="nav-search">
         <nav> <!--barra lateral mobile-->
             <div onclick="alterarMenu()" class="mobile-menu">
                 <div class="line1"></div>
@@ -22,14 +21,15 @@
                 <div class="line3"></div>
             </div>
             <ul class="nav-list">
-               <butto onclick="alterarMenu()"><i class="fa-solid fa-xmark" style="color: #ffffff;"></i></butto>
+                <butto onclick="alterarMenu()"><i class='bx bx-x'></i> </butto>
                 <li><a href="#">BRINQUEDOS</a></li>
                 <li><a href="#">ROUPAS</a></li>
                 <li><a href="#">ELETRÔNICOS</a></li>
             </ul>
         </nav> <!-- fim  da barra lateral mobile-->
 
-        <img src="/assets/img/in price.jpeg" alt="Logo">
+
+        <a href="/index.html"> <img src="/assets/img/in price.jpeg" alt="Logo"></a>
 
         <form class="search">
             <input class="search-btn" type="text" name="pesquisa" placeholder="Digite sua busca...">
@@ -38,9 +38,10 @@
 
         <div class="bx-shopping">
             <a href="#"><i id="bx-user1" class='bx bx-user'></i></a>
-            <a href="#"><i id="bx-user2" class='bx bxs-shopping-bags'></i></a>
+            <a><i id="bx-user2" class='bx bxs-shopping-bag'></i></a>
+            <p class="contagem_de_produto">0</p>
         </div>
-    </nav>
+    </header>
 
     <ul class="icones">
         <li>
@@ -50,7 +51,7 @@
             </a>
         </li>
         <li>
-            <a href="#">
+            <a href="">
                 <h3>ROUPAS</h3>
                 <i class='bx bx-closet'></i>
             </a>
@@ -73,14 +74,14 @@
         <div class="vitrine-photos">
             <div class="item">
                 <img src="/assets/img/Moda-Masculina/bermuda.jpg" alt="bermuda">
-                <a href="/assets/Pages/Roupas.html">
-                    <h2>Bermuda Masculina<br>Moletom Bolso <br>Cargo Verde </h2>
+                <a href="#">
+                    <h2>Bermuda Masculina Moletom Bolso Cargo Verde </h2>
                 </a>
-                <h3 class="price">R$ 88.00</h3>
-                <a href="/assets/Pages/Roupas.html">
-                    <h3 id="btn-purchase">Comprar</h3>
-                </a>
+                <h3 class="price">R$ 87.00</h3>
+                <button id="btn-purchase">Comprar</button>
+
             </div>
+
 
             <div class="item">
                 <img src="/assets/img/Moda-Masculina/calça.jpg" alt="calça">
@@ -88,9 +89,8 @@
                     <h2>Calça Marinho <br>com recorte nas <br>laterias </h2>
                 </a>
                 <h3 class="price">R$ 96.00</h3>
-                <a href="#">
-                    <h3 id="btn-purchase">Comprar</h3>
-                </a>
+                <button id="btn-purchase">Comprar</button>
+
             </div>
 
             <div class="item">
@@ -99,9 +99,9 @@
                     <h2>Conjunto Camiseta<br>e Bermuda Espadas<br><br></h2>
                 </a>
                 <h3 class="price">R$ 110.00</h3>
-                <a href="#">
-                    <h3 id="btn-purchase">Comprar</h3>
-                </a>
+
+                <button id="btn-purchase">Comprar</button>
+
             </div>
 
             <div class="item">
@@ -110,9 +110,9 @@
                     <h2>Camiseta Masculina<br>Manga Curta <br>Estampa Bear Lines <br></h2>
                 </a>
                 <h3 class="price">R$ 52.00</h3>
-                <a href="#">
-                    <h3 id="btn-purchase">Comprar</h3>
-                </a>
+
+                <button id="btn-purchase">Comprar</button>
+
             </div>
 
             <div class="item">
@@ -121,20 +121,30 @@
                     <h2>Bermuda Blazer<br>Masculino preto<br>fechamento em botoes</h2>
                 </a>
                 <h3 class="price">R$ 60.00</h3>
-                <a href="#">
-                    <h3 id="btn-purchase">Comprar</h3>
-                </a>
+
+                <button id="btn-purchase">Comprar</button>
+
             </div>
 
             <div class="item">
                 <img src="/assets/img/Moda-Masculina/jaqueta.jpg" alt="Jaqueta">
-                <a href="#">
+                <a href="">
                     <h2> Moletom com Zíper <br> Blusa de Frio</h2>
                 </a>
-                <h3 class="price">R$ 98.00</h3>
-                <a href="#">
-                    <h3 id="btn-purchase">Comprar</h3>
+                <h3 class="price">R$ 50.00</h3>
+                <button id="btn-purchase">Comprar</button>
+
+            </div>
+
+            <div class="item">
+                <img src="/assets/img/Moda-Masculina/jaqueta.jpg" alt="Jaqueta">
+                <a href="">
+                    <h2> Moletom com Zíper <br> Blusa de Frio</h2>
                 </a>
+                <h3 class="price">R$ 77.00</h3>
+
+                <button id="btn-purchase">Comprar</button>
+
             </div>
 
         </div>
@@ -154,9 +164,9 @@
                     <h2>Belle Macacão<br>de perna larga Um ombro</h2>
                 </a>
                 <h3 class="price">R$ 96.00</h3>
-                <a href="#">
-                    <h3 id="btn-purchase">Comprar</h3>
-                </a>
+
+                <button id="btn-purchase">Comprar</button>
+
             </div>
 
             <div class="item">
@@ -165,9 +175,9 @@
                     <h2>Blusa Xadrez <br> Com Manga Longa </h2>
                 </a>
                 <h3 class="price">R$ 45.00</h3>
-                <a href="#">
-                    <h3 id="btn-purchase">Comprar</h3>
-                </a>
+
+                <button id="btn-purchase">Comprar</button>
+
             </div>
 
             <div class="item">
@@ -176,9 +186,9 @@
                     <h2>Blusas Colarinho <br> com manga bufante</h2>
                 </a>
                 <h3 class="price">R$ 78.00</h3>
-                <a href="#">
-                    <h3 id="btn-purchase">Comprar</h3>
-                </a>
+
+                <button id="btn-purchase">Comprar</button>
+
             </div>
 
             <div class="item">
@@ -187,9 +197,9 @@
                     <h2>Luxns Cachecol <br>militar Shemagh <br>Tactical Desert<br></h2>
                 </a>
                 <h3 class="price">R$ 92.00</h3>
-                <a href="#">
-                    <h3 id="btn-purchase">Comprar</h3>
-                </a>
+
+                <button id="btn-purchase">Comprar</button>
+
             </div>
 
             <div class="item">
@@ -199,9 +209,9 @@
                     <h2>Calça Feminina Skinny<br>Malha Crepe com <br> Cinto Forrados</h2>
                 </a>
                 <h3 class="price">R$ 112.00</h3>
-                <a href="#">
-                    <h3 id="btn-purchase">Comprar</h3>
-                </a>
+
+                <button id="btn-purchase">Comprar</button>
+
             </div>
 
             <div class="item">
@@ -210,9 +220,22 @@
                     <h2>Vestido Feminino <br>Manga Longa <br>Moda Gringa</h2>
                 </a>
                 <h3 class="price">R$ 102.00</h3>
+
+                <button id="btn-purchase">Comprar</button>
+
+            </div>
+
+
+
+            <div class="item">
+                <img src="/assets/img/Moda-Feminina/Vestido Feminino Manga Longa Moda Gringa.jpg" alt="Vestido">
                 <a href="#">
-                    <h3 id="btn-purchase">Comprar</h3>
+                    <h2>Vestido Feminino <br>Manga Longa <br>Moda Gringa</h2>
                 </a>
+                <h3 class="price">R$ 55.00</h3>
+
+                <button id="btn-purchase">Comprar</button>
+
             </div>
 
         </div>
@@ -232,9 +255,9 @@
                     <h2>Compressor de ar portátil <br> recarregável </h2>
                 </a>
                 <h3 class="price">R$ 150.00</h3>
-                <a href="#">
-                    <h3 id="btn-purchase">Comprar</h3>
-                </a>
+
+                <button id="btn-purchase">Comprar</button>
+
             </div>
 
             <div class="item">
@@ -243,9 +266,9 @@
                     <h2> Camera de Seguraça Ip 360 </h2>
                 </a>
                 <h3 class="price">R$ 116.00</h3>
-                <a href="#">
-                    <h3 id="btn-purchase">Comprar</h3>
-                </a>
+
+                <button id="btn-purchase">Comprar</button>
+
             </div>
 
             <div class="item">
@@ -254,9 +277,9 @@
                     <h2>Fone de Estúdio <br>Profissional Armer SH550</h2>
                 </a>
                 <h3 class="price">R$ 550.00</h3>
-                <a href="#">
-                    <h3 id="btn-purchase">Comprar</h3>
-                </a>
+
+                <button id="btn-purchase">Comprar</button>
+
             </div>
 
             <div class="item">
@@ -265,9 +288,9 @@
                     <h2>Microfone Condensador <br> USB Blue Yeti Nano </h2>
                 </a>
                 <h3 class="price">R$ 778.00</h3>
-                <a href="#">
-                    <h3 id="btn-purchase">Comprar</h3>
-                </a>
+
+                <button id="btn-purchase">Comprar</button>
+
             </div>
 
             <div class="item">
@@ -276,9 +299,9 @@
                     <h2>Relógio Smartwatch <br> Inteligente D20 Android e IOS</h2>
                 </a>
                 <h3 class="price">R$ 112.00</h3>
-                <a href="#">
-                    <h3 id="btn-purchase">Comprar</h3>
-                </a>
+
+                <button id="btn-purchase">Comprar</button>
+
             </div>
 
             <div class="item">
@@ -287,10 +310,24 @@
                     <h2>SSD A400, Kingston, <br> SA400S37/240G, Preto</h2>
                 </a>
                 <h3 class="price">R$ 95.70</h3>
-                <a href="#">
-                    <h3 id="btn-purchase">Comprar</h3>
-                </a>
+
+                <button id="btn-purchase">Comprar</button>
+
             </div>
+
+
+            <div class="item">
+                <img src="/assets/img/Eletrônicos/sdd.jpg" alt="SDD">
+                <a href="#">
+                    <h2>SSD A400, Kingston, <br> SA400S37/240G, Preto</h2>
+                </a>
+                <h3 class="price">R$ 95.70</h3>
+
+                <button id="btn-purchase">Comprar</button>
+
+            </div>
+
+
         </div>
     </nav>
     <!--fim da vitrine de Eletrônicos-->
@@ -308,9 +345,9 @@
                     <h2>Cobra Articulada Naja <br>Brinquedo Magica OFERTA </h2>
                 </a>
                 <h3 class="price">R$ 4.25</h3>
-                <a href="#">
-                    <h3 id="btn-purchase">Comprar</h3>
-                </a>
+
+                <button id="btn-purchase">Comprar</button>
+
             </div>
 
             <div class="item">
@@ -319,9 +356,9 @@
                     <h2>Helicoptero Policia <br>Para Criança Altimar Brinquedos</h2>
                 </a>
                 <h3 class="price">R$ 25.00</h3>
-                <a href="#">
-                    <h3 id="btn-purchase">Comprar</h3>
-                </a>
+
+                <button id="btn-purchase">Comprar</button>
+
             </div>
 
             <div class="item">
@@ -330,9 +367,9 @@
                     <h2>Máquina De Bolhas Mágica<br></h2>
                 </a>
                 <h3 class="price">R$ 42.00</h3>
-                <a href="#">
-                    <h3 id="btn-purchase">Comprar</h3>
-                </a>
+
+                <button id="btn-purchase">Comprar</button>
+
             </div>
 
             <div class="item">
@@ -341,9 +378,9 @@
                     <h2>Brinquedo Boi <br> Touro Farm Animais <br>Da Fazenda</h2>
                 </a>
                 <h3 class="price">R$ 9.50</h3>
-                <a href="#">
-                    <h3 id="btn-purchase">Comprar</h3>
-                </a>
+
+                <button id="btn-purchase">Comprar</button>
+
             </div>
 
             <div class="item">
@@ -352,9 +389,9 @@
                     <h2>Brinquedo Crocodilo <br> Dentista Morde Dedo Verde</h2>
                 </a>
                 <h3 class="price">R$ 27.66</h3>
-                <a href="#">
-                    <h3 id="btn-purchase">Comprar</h3>
-                </a>
+
+                <button id="btn-purchase">Comprar</button>
+
             </div>
 
             <div class="item">
@@ -363,15 +400,36 @@
                     <h2>Brinquedo Lagarta <br>de Aperta Maluca Infantil</h2>
                 </a>
                 <h3 class="price">R$ 18.88</h3>
+
+                <button id="btn-purchase">Comprar</button>
+
+            </div>
+
+
+
+
+            <div class="item">
+                <img src="/assets/img/Brinquedos/Brinquedo6.jpg" alt="Brinquedo Lagarta ">
                 <a href="#">
-                    <h3 id="btn-purchase">Comprar</h3>
+                    <h2>Brinquedo Lagarta <br>de Aperta Maluca Infantil</h2>
                 </a>
+                <h3 class="price">R$ 22.88</h3>
+
+                <button id="btn-purchase">Comprar</button>
+
             </div>
         </div>
     </nav>
     <!--Fim da Vitrine de Brinquedos -->
 
-    <footer>
+
+
+
+
+
+
+
+    <footer class="footer">
         <div class="footer-middle">
             <div class="footer-contato">
                 <h3><i id="icone-contato" class='bx bxs-contact' style='color:rgba(22, 120, 211, 0.92)'></i>Contatos</i>
@@ -389,7 +447,7 @@
             </div>
 
             <div class="social">
-                <a href="#"><i class='bx bxl-facebook-square'></i></a>
+                <a href="/index.html"><i class='bx bxl-facebook-square'></i></a>
                 <a href="#"><i class='bx bxl-instagram-alt' style="color: rgba(195, 22, 26, 0.91);"></i></a>
             </div>
         </div>
@@ -400,7 +458,39 @@
 
     </footer>
 
-    <script src="/assets/Js/_sidebar.js"></script>
+  
+
+
+    <script>
+
+
+        //Menu de hamburgue
+        function alterarMenu() {
+            let navLinks = document.querySelector('.nav-list');
+            navLinks.classList.toggle('open');
+        }
+        // fim Menu de hamburgue
+
+
+
+
+
+        //funcao url
+        document.addEventListener('DOMContentLoaded', () => {
+            const items = document.querySelectorAll('.vitrine-photos .item');
+
+            items.forEach(item => {
+                const itemName = item.querySelector('h2').textContent;
+                const itemPrice = item.querySelector('.price').textContent.replace('R$ ', '');
+                const itemImage = item.querySelector('img').getAttribute('src');
+                const link = item.querySelector('a');
+
+                link.href = `/assets/Pages/Roupas.html?name=${encodeURIComponent(itemName)}&price=${encodeURIComponent(itemPrice)}&image=${encodeURIComponent(itemImage)}`;
+            });
+        });
+        // fim da funcao url
+    </script>
+
 </body>
 
 </html>

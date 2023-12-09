@@ -1,292 +1,427 @@
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  object-fit: cover;
 }
 
-#bx-user1 {
-    display: none;
-}
-
-.img-conteiner {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.img-main img {
-    position: relative;
-    width: 350px;
-    height: 400px;
-    border-radius: 5px;
-}
-
-.img-main h1 {
-    font-weight: bold;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 27px;
-    color: #252525;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 30px 0 20px 0px;
-}
-
-.img-conteiner .imagem-description {
-    position: absolute;
-    top: 90px;
-    left: 12px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    padding: 10px;
-}
-
-.img-conteiner .imagem-description img {
-    width: 85px;
-    height: 85px;
-    z-index: 1;
-    border: 1px solid #bebebe;
-    border-radius: 4px;
-    margin-bottom: 10px;
-   
-}
-
-.imagem-description img:hover {
-    border: 2px solid rgba(22, 120, 211, 0.92);
-    transform: scale(1.1);
-}
-
-.img-conteiner .icone-star {
-    position: absolute;
-    bottom: -24px;
-    left: 28%;
-    transform: translateX(-50%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10px;
+/*conteiner de imagem e btn*/
+.conteiner-imagem {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
 
 }
 
-.img-conteiner .icone-star i {
-    font-size: 20px;
+.imagem-principal {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  left: 45%;
+  text-align: center;
+  margin: 20px;
+
+
 }
 
-.conteiner-price {
-    font-weight: bold;
-    color: rgb(7, 118, 192);
-    display: flex;
-    position: absolute;
-    top: 253px;
-    left: 563px;
+#img-main {
+  height: 100%;
+  max-height: 500px;
+  max-width: 100%;
+  border-radius: 5px;
 }
+
+.conteiner-imagem h3 {
+  display: block;
+  height: 60px;
+  overflow: hidden;
+  font-size: 20px;
+  line-height: 20px;
+  margin-top: 15px;
+  color: var(--color-text);
+
+}
+
+.imagem-pequena img {
+  height: auto;
+  max-height: 112px;
+  max-width: 100px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.imagem-pequena {
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  top: 66px;
+  left: 16px;
+  cursor: pointer;
+
+}
+
+#prev-btn,
+#next-btn {
+  position: absolute;
+  width: 60px;
+  height: 100px;
+  top: 310px;
+  cursor: pointer;
+  background: rgba(209, 205, 205, 0.575);
+  border-radius: 5px;
+  border: none;
+  transition: opacity 0.5s ease;
+  align-items: center;
+  display: flex;
+  opacity: 0;
+}
+
+#prev-btn:hover,
+#next-btn:hover {
+  color: var(--color-primy);
+  opacity: 1;
+  z-index: 9999;
+}
+
+#prev-btn {
+  left: 178px;
+  z-index: 1;
+}
+
+#next-btn {
+  z-index: 1;
+  right: -186px;
+}
+
+.imagem-pequena img {
+  border: none;
+}
+
+.imagem-pequena img.active {
+  border: 2px solid #bebebe;
+
+}
+
+/* fim do conteiner de imagem e btn*/
+
+
+/*infomarçoes do price*/
+
+/*infomarcoes-de-compra*/
+.infomarcoes-de-compra {
+  position: absolute;
+  font-weight: bold;
+  display: flex;
+  top: 15vw;
+  left: 40%;
+
+}
+
 
 .price {
-    display: flex;
-    align-items: center;
-    font-size: 45px;
-    position: relative;
-    bottom: 30px;
-    left: 100px;
-    text-align: center;
-}
-
-.conteiner-price img {
-    height: 100px;
-    right: 92%;
-    top: 35px;
-    padding: 23px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 45px;
+  bottom: 30px;
+  left: 216px;
+  color: rgb(7, 118, 192)
 }
 
 .price-card-detail {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    top: 100px;
-    left: 250px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  top: 100px;
+  left: 260px;
 }
 
-.price-card-detail .title-card {
-    font-size: 15px;
+.price-card-detail .total-price {
+  display: flex;
+  align-items: center;
+  align-items: center;
+
 }
 
-#price-card {
-    font-size: 35px;
+.price-card-detail .total-price i {
+  font-size: 27px;
+  margin-bottom: 10px;
+  font-weight: bold;
+
+
 }
 
-.price-card-detail .price-card {
-    font-size: 20px;
-    display: flex;
-    align-items: center;
+
+
+
+
+
+.janela_modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(14, 14, 14, 0.637);
+  z-index: 998; 
+  display: none;
 }
 
+
+#info-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px;
+  min-width: 250px;
+  min-height: 250px;
+  height: 250px;
+  background-color: #fff;
+  background: blur(10px);
+  border-radius: 20px;
+  text-align: center;
+  z-index: 999;
+  display: none;
+
+}
+
+
+#title_modal {
+  position: relative;
+  top: 27px;
+  color: var(--color-primy);
+}
+
+#btn1,
+#btn2 {
+  position: relative;
+  padding: 20px;
+  top: 95px;
+  margin: 0px 30px;
+  border: 1px solid #bebebe;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+
+
+}
+
+#btn2 {
+  background: #57c520;
+  color: #eeededee;
+
+}
+
+#icone_x {
+  position: absolute;
+  right: 0px;
+
+}
+
+#icone_x i {
+  font-size: 35px;
+}
+
+#icone_x i:hover {
+  color: red;
+}
+
+
+
+
+/* fim infomarcoes-de-compra*/
+
+/*butão de escolher tamanho itens*/
 .btn-tamanho {
-    text-align: center;
-    padding-left: 367px;
-    position: relative;
-    bottom: 100px;
+  position: absolute;
+  text-align: center;
+  top: 367px;
+  left: 58%;
 }
 
 #title-T {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    padding: 10px;
-    align-items: center;
-    font-weight: bold;
-    color: #252525;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 10px;
+  align-items: center;
+  font-weight: bold;
+  color: #252525;
 }
 
 .btn-tamanho label {
-    padding: 5px 10px;
-    margin: 3px;
-    cursor: pointer;
-    border: 1px solid #bebebe;
+  padding: 6px 15px;
+  margin: 3px;
+  cursor: pointer;
+  border: 1px solid #bebebe;
 }
 
 .btn-tamanho input[type="radio"] {
-    display: none;
+  display: none;
 }
 
 .btn-tamanho input[type="radio"]:checked+label {
-    background-color: rgb(10, 149, 241);
-    color: #fff;
+  background-color: rgb(10, 149, 241);
+  color: #fff;
 }
 
 label:hover {
-    background-color: rgb(240, 238, 238);
+  background-color: rgb(240, 238, 238);
 }
 
+/*fim butão de escolher tamanho itens*/
+
+/* conteiner do butão de compra*/
 .conteiner-btn-purchase {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    padding-left: 619px;
-    bottom: 72px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 442px;
+  left: 53%;
 }
 
 .btn-purchase {
-    background: #57c520;
-    color: #eeededee;
-    font-size: 30px;
-    width: 250px;
-    height: 50px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 4px;
+  background: #57c520;
+  color: #eeededee;
+  font-size: 30px;
+  width: 250px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 4px;
+
 }
 
 #btn-quantidade {
-    width: 40px;
-    height: 40px;
-    border-radius: 5px;
-    font-size: 20px;
-    position: relative;
-    border: 1px solid #bebebe;
-    text-align: center;
-    font-weight: bold;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 20px;
+  position: relative;
+  border: 1px solid #bebebe;
+  text-align: center;
+  font-weight: bold;
 }
 
 .btn-add {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 #btn-less,
 #btn-more {
-    font-size: 15px;
-    font-weight: bold;
-    border: 1px solid #bebebe;
-    cursor: pointer;
-    background: transparent;
-    border-radius: 2px;
+  font-size: 15px;
+  font-weight: bold;
+  border: 1px solid #bebebe;
+  cursor: pointer;
+  background: transparent;
+  border-radius: 2px;
+
 }
 
-/*cep*/
+/*  fim conteiner do butão de compra*/
+
+
+/*area de calcular frete (cep)*/
 .area-calculo-cep {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    bottom: 60px;
-    padding-left: 300px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 509px;
+  left: 703px;
 }
 
 .cep {
-    width: 120px;
-    height: 40px;
-    border: 1px solid #bebebe;
-    border-radius: 3px;
-    outline: none;
+  width: 120px;
+  height: 40px;
+  border: 1px solid #bebebe;
+  border-radius: 3px;
+  outline: none;
 }
 
 .btn-calcular-frete {
-    height: 40px;
-    background: transparent;
-    border: 1px solid #bebebe;
-    cursor: pointer;
-    border-radius: 3px;
-    font-weight: bold;
-    font-size: 16px;
+  height: 40px;
+  background: transparent;
+  border: 1px solid #bebebe;
+  cursor: pointer;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 16px;
 }
 
 .btn-calcular-frete:hover {
-    background-color: rgb(240, 238, 238);
+  background-color: rgb(240, 238, 238);
+  color: var(--color-primy);
 }
 
 .icone-area {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 10px;
 }
 
 .icone-area i {
-    position: relative;
-    font-size: 27px;
-    left: 10px;
+  position: relative;
+  font-size: 27px;
+  left: 10px;
 }
 
 .icone-area label {
-    font-weight: bold;
-    font-size: 18px;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .area-calculo label {
-    font-weight: bold;
+  font-weight: bold;
 }
 
+/* fim area de calcular frete (cep)*/
 
+
+/*conteiner da descrição do produto*/
 .container-product-description {
-    text-align: center;
-    line-height: 25px;
+  position: absolute;
+  text-align: center;
+  line-height: 25px;
+  top: 750px;
 }
 
-.container-product-description h3{
-    color: #121010;
-    font-size: 25px;
-    margin: 20px;
+.container-product-description h3 {
+  color: #121010;
+  font-size: 25px;
+  margin: 20px;
 }
 
 .container-product-description p {
-    color: #252525;
-    font-family: system-ui;
-    font-size: 16px;
-    line-height: 1.6;
-    margin: 10px 0;
-    text-align: justify;
-    margin: 10px;
+  color: var(--color-text);
+  font-family: system-ui;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 10px 0;
+  text-align: justify;
+  margin: 10px;
 
 }
 
-.conteiner-main-mobile{
-    display: none;
+/* fim conteiner da descrição do produto*/
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+  position: absolute;
+  top: 80vw;
+
 }
-
-

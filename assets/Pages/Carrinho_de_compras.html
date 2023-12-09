@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/assets/Pages/Carrinho_de_compras.css">
+    <link rel="stylesheet" href="/assets/Pages/_mobile.css">
+    <title>Carrinho_de_compras</title>
+
+
+</head>
+
+<body>
+    <main class="conteiner-carrinho-de-compra">
+        <div class="title">
+            <h2><i class='bx bx-cart'></i>Carrinho de Compras</h2>
+        </div>
+        <div class="title-item">
+            <p id="item1">Itens</p>
+            <p>Quantidade</p>
+            <p>Valor PIX </p>
+            <p>Valor cartão</p>z
+
+        </div>
+
+
+        <div class="conteiner-produto-confirm">
+
+            <img id="imagemDacompra" src="/assets/img/Moda-Masculina/calça.jpg" alt="calça" width="100">
+
+            <a href="#">
+                <p id="titleCompraCar">Calça Marinho com recorte nas laterias</p>
+            </a>
+
+            <span onclick="removerItemDoCarrinho(this.parentNode)" id="icone-x"><i class='bx bxs-x-circle'></i></span>
+
+            <div class="btn-add-confirm">
+                <button id="btn-more">-</button>
+                <input type="text" id="btn-quantidade-confirm" min="1" max="10" value="1">
+                <button id="btn-less">+</button>
+            </div>
+
+            <div class="valores-carrinho">
+                <div class="valores-carrinho1">
+                    <p id="price-pix">88,10</p>
+                    <p id="price-pix2">avista</p>
+                </div>
+                <div class="valores-carrinho2">
+                    <p id="price-card">100,20</p>
+                    <p id="price-item2">no cartão</p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="carinho-vazio" id="carinho-vazio">
+            <i class='bx bxs-sad'></i>
+            <h1>Carrinho Vazio</h1>
+        </div>
+
+
+
+
+        <div class="btn-voltar">
+            <a href="/index.html"><button><i class='bx bx-left-arrow-alt'></i>Voltar as compras</button></a>
+            <a href=""><button id="btn-finalizar-compra">Ir para o pagamento<i
+                        class='bx bx-right-arrow-alt'></i></button></a>
+
+        </div>
+    </main>
+
+
+
+
+
+
+
+<script src="/assets/Js/Carrinho_De_Compra.js"></script>
+
+</body>
+
+</html>

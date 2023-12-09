@@ -1,0 +1,486 @@
+.contagem_de_produto {
+    position: absolute;
+    top: 28px;
+    left: 6rem;
+    color: white;
+    background-color: black;
+    border-radius: 44%;
+    font-size: 12px;
+    cursor: pointer;
+
+}
+
+.carrinho-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f6f7f8;
+    flex-direction: column;
+    padding: 10px;
+    display: none;
+    z-index: 9999;
+    max-height: 100%;
+    overflow-y: auto;
+
+}
+
+
+
+
+.removerProduto {
+    position: absolute;
+    top: -2%;
+    right: -2%;
+    cursor: pointer;
+}
+
+.removerProduto i {
+    font-size: 23px;
+
+}
+
+.removerProduto:hover {
+    color: red;
+}
+
+
+
+.conteiner-carrinho-de-compra {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+
+
+
+
+}
+
+
+.item-carrinho {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    margin: 10px 0px 20px;
+
+}
+
+.title h2 {
+    display: flex;
+    align-items: center;
+
+}
+
+.title i {
+    align-items: center;
+    font-size: 30px;
+}
+
+.title-item {
+    display: flex;
+    background-color: #fff;
+    border: 1px solid #bebebe;
+    justify-content: space-between;
+    text-align: center;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+#item1 {
+    margin-right: 43%;
+}
+
+.conteiner-produto-confirm {
+    position: relative;
+    display: flex;
+    top: 30px;
+    padding: 5px 10px;
+    background-color: #fff;
+    border: 1px solid #bebebe;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+
+
+
+
+.conteiner-produto-confirm img {
+    width: 60px;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.conteiner-produto-confirm a {
+    padding: 0px 35px;
+    text-decoration: none;
+    position: absolute;
+    top: 1vw;
+    left: 4vw;
+    font-size: 14px;
+
+}
+
+.conteiner-produto-confirm a:hover {
+    text-decoration: underline;
+}
+
+.btn-add-confirm {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 1px solid #bebebe;
+    border-radius: 4px;
+    left: 11rem;
+
+
+
+
+}
+
+#btn-quantidade-confirm {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border: none;
+    background: transparent;
+    font-weight: bold;
+    font-size: 16px;
+
+
+}
+
+#btn-less-carrinho,
+#btn-more-carrinho {
+    position: relative;
+    height: 32px;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    padding: 0px 8px;
+
+}
+
+.valores-carrinho {
+    position: relative;
+    display: flex;
+    font-size: 18px;
+    left: 4rem;
+
+}
+
+
+.valores-carrinho p {
+    margin-right: 70px;
+}
+
+
+
+
+
+.btn-voltar {
+    position: absolute;
+    top: 25rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    min-height: 150%;
+
+
+
+}
+
+.btn-voltar button {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #bebebe;
+    cursor: pointer;
+    background-color: #f0efef;
+    font-size: 16px;
+    border-radius: 5px;
+
+
+
+
+}
+
+.btn-voltar i {
+    position: relative;
+    font-size: 18px;
+    left: 13px;
+
+
+
+
+
+}
+
+.btn-voltar button:hover {
+    background: rgba(209, 205, 205, 0.575);
+    color: var(--color-primy);
+
+
+}
+
+
+.btn-finalizar-compra {
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+
+}
+
+#btn-finalizar-compra {
+    border-radius: 5px;
+    background: #57c520;
+    color: #eeededee;
+    position: relative;
+    left: 25vw;
+    width: 205px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+
+}
+
+
+#price-item2,
+#price-pix2 {
+    display: none;
+}
+
+
+
+
+
+.carinho-vazio {
+    position: absolute;
+    top: 15rem;
+    right: 19rem;
+
+
+
+
+
+
+}
+
+.carinho-vazio h1 {
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 5px 0px;
+}
+
+.carinho-vazio i {
+    position: relative;
+    font-size: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 3px;
+
+}
+
+
+
+
+@media screen and (max-width:768px) {
+
+
+
+
+
+
+    #titleCompraCar {
+        font-size: 0.8rem;
+    }
+
+    .title h2 {
+        border-bottom: 1px solid;
+        display: flex;
+        align-items: center;
+        font-size: 13px;
+    }
+
+
+
+    .title-item {
+        display: none;
+
+    }
+
+    .conteiner-carrinho-de-compra {
+        width: 50%;
+    }
+
+    .conteiner-produto-confirm a {
+        top: 1rem;
+        left: 5rem;
+    }
+
+    .valores-carrinho {
+        font-size: 13px;
+        display: flex;
+    }
+
+    .valores-carrinho1 {
+        position: relative;
+
+    }
+
+
+    #price-pix2,
+    #price-item2 {
+        display: block;
+        font-size: 0.8rem;
+    }
+
+    .conteiner-produto-confirm {
+        top: 0rem;
+        display: flex;
+        padding: 36px 10px;
+        width: 368px;
+    }
+
+    .carinho-vazio {
+        top: 10rem;
+        right: -6rem;
+    }
+
+
+
+    .valores-carrinho p {
+        margin-left: -47px;
+        font-size: 1rem;
+
+    }
+
+
+    .conteiner-produto-confirm img {
+        position: relative;
+        bottom: 45px;
+        width: 80px;
+        height: 100%;
+        top: -22px;
+
+
+
+    }
+
+
+
+    .btn-voltar {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 100%;
+        margin-top: 18rem;
+        right: -11rem;
+        
+    }
+
+
+
+    .btn-voltar button {
+        width: 350px;
+        margin-bottom: 10px;
+
+
+    }
+
+    #btn-finalizar-compra {
+        position: absolute;
+        left: 0;
+        width: 100%;
+
+        padding-left: 6rem;
+    }
+
+
+    .btn-add-confirm {
+        position: absolute;
+        top: 74%;
+        left: 13px;
+
+    }
+
+
+    .removerProduto {
+        top: 0rem;
+        right: -1rem;
+    }
+
+
+
+
+
+
+
+
+
+    #janela_modal {
+        position: fixed;
+        left: -26px;
+
+    }
+
+
+    #info-modal {
+        width: 370px;
+        left: 1%;
+        top: 20%;
+        transform: translate(10px, 10px);
+
+
+
+
+
+
+    }
+
+
+
+
+
+    #title_modal {
+        font-size: 25px;
+    }
+
+    #btn1,
+    #btn2 {
+        position: absolute;
+        padding: 10px;
+        top: 53%;
+
+
+
+
+    }
+
+    #btn1 {
+        left: 50%;
+
+
+    }
+
+
+
+    #btn2 {
+        right: 46%;
+
+    }
+
+
+}

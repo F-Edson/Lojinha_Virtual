@@ -1,0 +1,292 @@
+@media screen and (max-width:768px) {
+    body {
+        background-color: white;
+        
+
+    }
+
+    .nav-search img {
+        position: relative;
+        left: 58px;
+
+    }
+
+    /*conteiner de imagem e btn*/
+    .imagem-pequena {
+        display: none;
+    }
+
+    .imagem-principal {
+        top: 102vw;
+        width: 397px;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        left: 149%;
+        object-fit: cover;
+
+
+    }
+
+
+  
+    
+
+    .conteiner-imagem h3 {
+        line-height: 21px;
+        font-size: 18px;
+        font-family: inherit;
+        position: relative;
+
+
+
+    }
+
+    #img-main {
+        max-height: 100%;
+        display: block;
+        width: auto;
+        object-fit: cover;
+
+
+
+    }
+
+    #prev-btn,
+    #next-btn {
+        opacity: 1;
+        position: absolute;
+        top: 419px;
+        display: flex;
+        align-items: center;
+        left: 282%;
+    }
+
+    #prev-btn {
+        left: 3%;
+    }
+
+    #next-btn {
+        right: 0%;
+    }
+
+    /* fim do conteiner de imagem e btn */
+
+    /*infomarcoes-de-compra*/
+
+    .infomarcoes-de-compra {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 57rem;
+        left: 2vw;
+    }
+
+    .btn-finalizar-compra {
+        position: relative;
+        left: 122%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        font-size: 16px;
+
+    }
+
+    .price {
+        position: relative;
+        left: 0;
+        font-size: 30px;
+        bottom: 15px;
+       
+    }
+
+    .price-card-detail {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin: 10px;
+    }
+
+    .price-card-detail .price-card {
+        font-size: 20px;
+    }
+
+    .price-card-detail .total-price i {
+        font-size: 24px;
+
+    }
+
+    /*fim infomarcoes-de-compra*/
+
+
+    /*butão de escolher tamanho itens*/
+    .btn-tamanho {
+        position: absolute;
+        top: 1112px;
+        left: 0;
+        margin: 10px;
+    }
+
+    .btn-tamanho label {
+        font-size: 15px;
+    }
+
+    /*fim butão de escolher tamanho itens*/
+
+
+    /* conteiner do butão de compra*/
+    .conteiner-btn-purchase img {
+        display: none;
+    }
+
+    .conteiner-btn-purchase {
+        position: absolute;
+        top: 1200px;
+        left: 0;
+        margin: 10px;
+    }
+
+    /*  fim conteiner do butão de compra*/
+
+    /*  area de calcular frete (cep)*/
+    .area-calculo-cep {
+        position: absolute;
+        left: -22px;
+        top: 1281px;
+        margin: 10px;
+    }
+
+    /* fim area de calcular frete (cep)*/
+
+    /*conteiner da descrição do produto*/
+    .container-product-description {
+        position: absolute;
+        top: 1380px;
+    }
+
+    /* fim conteiner da descrição do produto*/
+
+    .footer {
+        position: absolute;
+        top: 300%;
+
+    }
+
+
+
+
+
+
+   
+
+
+
+
+
+
+    .valores-confirm-order {
+        position: absolute;
+        left: 195px;
+        bottom: 30px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        color: var(--color-text);
+        font-weight: bold;
+
+
+
+
+    }
+
+
+
+
+
+
+   
+        
+
+
+       
+        
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+    #janela_modal {
+        position: fixed;
+        left: -26px;
+
+    }
+
+
+    #info-modal {
+        width: 370px;
+        left: 1%;
+        top: 34%;
+        transform: translate(10px , 10px);
+
+
+
+
+
+
+    }
+
+
+
+
+
+    #title_modal {
+        font-size: 25px;
+    }
+
+    #btn1,
+    #btn2 {
+        position: absolute;
+        padding: 10px;
+        top: 53%;
+
+
+
+
+    }
+
+    #btn1 {
+        left: 50%;
+
+
+    }
+
+
+
+    #btn2 {
+        right: 46%;
+
+    }
+
+
+    #icone_x {
+        position: absolute;
+        right: -18px;
+
+    }
+
+
+
+    .footer {
+        position: relative;
+        top: 125rem;
+
+    }
+}
